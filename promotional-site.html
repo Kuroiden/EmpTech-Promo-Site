@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+	<head>
+		<title> Software Development - iACADEMY SHS </title>
+		<link rel="icon" type="image/x-icon" href="assets/logos/icon.ico">
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+		<!--- NAVBAR ---> 
+		<div class="navbar">
+			<p class="navbar-text"><b>SENIOR HIGH SCHOOL</b></p>
+			<img src="assets/logos/Brand-Logo.png" style="margin-right: 1%; height: 30px;">
+		</div>
+		<!--- HEADER ---> 
+		<section id="header">
+			<div class="header-container">
+				<div class="iacademy-shs">
+					<img src="assets/logos/SHS-Logo-alt.png" height="40px">
+					<br>
+					<h3 style="margin: auto; font-size: 20px;"><b>Software Development</b></h3>
+				</div>
+				<br><br>
+				<div class="heading">
+					<div class="hexagon-top"></div>
+					<div class="hexagon-mid">
+						<h1>Discover</h1>
+						<h2>problem solving</h2>
+						<h3>with the use of computing and software.</h3>
+					</div>
+					<div class="hexagon-bot"></div>
+				</div>
+				<h6 style="margin-top: 70px; margin-bottom: 0px;">▼</h6>
+			</div>
+		<section/>
+		<!--- ABOUT ---> 
+		<section id="about">
+			<h6>Software Development Strand</h6>
+			<p>Prepares students for the conceptualization, construction, and deployment of software used for real world problem-solving. It introduces students to various concepts and theories, algorithmic foundations, and the application of solutions in the field of computing.<p>
+		</section>
+		<!--- STUDENT WORKS ---> 
+		<section id="works">
+			<div class="works-container">
+				<h6>Student Works</h6>
+				<img src="assets/studentworks/insights.png" class="works-da">
+				<img src="assets/studentworks/irespond.png" class="works-ua">
+				<img src="assets/studentworks/envisage.png" class="works-r">
+				<img src="assets/studentworks/puwshee.png" class="works-l">
+				<img src="assets/studentworks/covidinfoph.png" class="works-db">
+				<img src="assets/studentworks/vibecheck.png" class="works-ub">
+			</div>
+			
+			<script>
+				const observer = new IntersectionObserver(entries => {
+				  entries.forEach(entry => {
+					const worksdowna = entry.target.querySelector('.works-da');
+					const worksdownb = entry.target.querySelector('.works-db');
+					const worksupb = entry.target.querySelector('.works-ub');
+					const worksupa = entry.target.querySelector('.works-ua');
+					const worksright = entry.target.querySelector('.works-r');
+					const worksleft = entry.target.querySelector('.works-l');
+					
+					if (entry.isIntersecting) {
+						worksdowna.classList.add('down');
+						worksupa.classList.add('up');
+						worksdownb.classList.add('down');
+						worksupb.classList.add('up');
+						worksright.classList.add('right');
+						worksleft.classList.add('left');
+						return;
+					}
+						worksdowna.classList.remove('down');
+						worksupa.classList.remove('up');
+						worksdownb.classList.remove('down');
+						worksupb.classList.remove('up');
+						worksright.classList.remove('right');
+						worksleft.classList.remove('left');
+				  });
+				});
+
+				observer.observe(document.querySelector('.works-container'));
+			</script>
+			<br>
+		</section>
+		
+		<!--- POSSIBLE COURSES ---> 
+		<section id="courses">
+			<div class="courses-container">
+				<div class="courses-text">
+					<h6>Possible College Courses</h6>
+					<table class="course">
+						<tr>
+							<td>Cloud Computing</td>
+							<td>Information Technology</td>
+						</tr>
+						<tr>
+							<td>Computer Science</td>
+							<td>Mobile Application Development</td>
+						</tr>
+						<tr>
+							<td>Cyber Security</td>
+							<td>Network Engineering</td>
+						</tr>
+						<tr>
+							<td>Data Science</td>
+							<td>Software Engineering</td>
+						</tr>
+						<tr>
+							<td>Game Development</td>
+							<td>Web Development</td>
+						</tr>
+					</table>
+				</div>
+				<div class="courses-image">
+					<img src="assets/img/college.png" width="100%">
+				</div>
+			</div>
+		</section>
+		<!--- POSSIBLE JOBS ---> 
+		<section id="jobs">
+			<div class="jobs-container">
+				<h6>Possible Careers</h6>
+				<table class="job">
+					<tr>
+						<td>Algorithm Developer</td>
+						<td>Cyber Security Specialist</td>
+						<td>Information Systems Architect</td>
+						<td>Software Developer</td>
+					</tr>
+					<tr>
+						<td>Back-end Developer</td>
+						<td>Data Architect</td>
+						<td>Information Technology Specialist</td>
+						<td>Software Designer</td>
+					</tr>
+					<tr>
+						<td>Cloud Administrator</td>
+						<td>Data Scientist</td>
+						<td>Mobile Application Designer</td>
+						<td>Software Developer</td>
+					</tr>
+					<tr>
+						<td>Cloud Computing Specialist</td>
+						<td>Database Administrator</td>
+						<td>Mobile Application Developer</td>
+						<td>UI/UX Designer</td>
+					</tr>
+					<tr>
+						<td>Cloud Engineer</td>
+						<td>Database Architect</td>
+						<td>Mobile Application Programmer</td>
+						<td>Web Designer</td>
+					</tr>
+					<tr>
+						<td>Computer Engineer</td>
+						<td>Front-end Developer</td>
+						<td>Network Engineer</td>
+						<td>Web Developer</td>
+					</tr>
+					<tr>
+						<td>Computer Programmer</td>
+						<td>Game Developer</td>
+						<td>Programming Analyst</td>
+						<td>Web Programmer</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<!--- APPLY NOW ---> 
+		<section id="apply">
+			<div class="apply-container">
+				<div class="apply-elements">
+					<h5>Apply for</h5>
+					<h4>Software Development</h4>
+					<h5>at iACADEMY Today</h5>
+					<button><b>APPLY NOW</b></button>
+				</div>
+			</div>
+		</section>
+		<!--- FOOTER ---> 
+		<img src="assets/logos/White-Logo.png" style="height: 75px; float: left; margin-left: 10px; margin-bottom: 10px; margin-right: 20px;"> 
+		<h3 style="text-align: left; color: #3668ff; font-family: 'Roboto Black'; letter-spacing: 1;">Dare to be different</h3>
+		<p style="text-align: left; margin: 0px; line-height: 30px; text-transform: uppercase;">Be a game changer</p><br>
+		<p style="text-align: left; margin: 0px; font-size: 10px; line-height: 10px;">by Cloe Angelica D.C. Gorgonio - SD12A</p>
+	</body>
+</html>
